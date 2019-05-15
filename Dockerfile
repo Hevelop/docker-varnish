@@ -3,7 +3,6 @@ FROM debian:stretch
 ADD install.sh install.sh
 RUN chmod +x install.sh && sh ./install.sh && rm install.sh
 
-#VOLUME ["/var/lib/varnish", "/etc/varnish"]
 EXPOSE 80
 
 ENV CACHE_SIZE      256M
